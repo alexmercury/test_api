@@ -32,6 +32,19 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'devise'
+gem 'devise_token_auth'
+
+gem 'activeadmin'
+
+gem 'resque'
+gem 'resque-scheduler'
+gem 'resque-scheduler-web'
+gem 'resque-web', require: 'resque_web'
+
+gem 'fcm'
+
+gem 'swagger-blocks'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -40,6 +53,9 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'dotenv-rails'
+  gem 'rspec-rails'
+  gem 'letter_opener'
+  gem 'faker'
 end
 
 group :development do
